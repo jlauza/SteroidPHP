@@ -1,2 +1,2 @@
-# phpplayground
+# PHP Playground
 For PHP practice.
