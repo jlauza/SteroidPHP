@@ -20,9 +20,11 @@
     </label>
   </div>
 
-  <br />
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+  <div class="container">
+    <p>No account yet? <a href="/register">Register</a></p>
+  </div>
+
+  <div class="container">
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>

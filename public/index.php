@@ -1,5 +1,7 @@
 <?php
 
+include_once './header.php';
+
 function showError404() {
     header("HTTP/1.1 404 Not Found");
     require '../app/views/404/404.php';
@@ -21,6 +23,10 @@ switch ($request) {
             require_once "../app/views/auth/login.php";
             break;
 
+        case "register":
+            require_once "../app/views/auth/register.php";
+            break;            
+
         case "dashboard":
         require_once "../app/views/dashboard.php";
         break;
@@ -29,3 +35,5 @@ switch ($request) {
             showError404();
             break;
 }
+
+include_once './footer.php';
