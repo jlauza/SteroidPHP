@@ -17,6 +17,10 @@ switch ($request) {
         require_once "./home.php";
         break;
 
+        case "login":
+            require_once "../app/views/auth/login.php";
+            break;
+
         case "dashboard":
         require_once "../app/views/dashboard.php";
         break;
