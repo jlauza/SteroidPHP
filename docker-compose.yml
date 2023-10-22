@@ -52,7 +52,7 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - projectdance-laravel-app
+      - php-app
 
 volumes:
   mysql_data:
