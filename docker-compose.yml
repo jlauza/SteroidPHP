@@ -3,7 +3,7 @@ version: '3'
 services:
   php-app:
     image: app
-    container_name: phpplayground
+    container_name: phpplayground-app
     build: .
     restart: always
     volumes:
@@ -20,7 +20,7 @@ services:
 
   mysql:
     image: mysql
-    container_name: mysql
+    container_name: phpplayground-mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -33,7 +33,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpplayground-phpmyadmin
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
@@ -43,7 +43,7 @@ services:
       - mysql
       
   nginx:
-    container_name: nginx
+    container_name: phpplayground-nginx
     build:
       context: .
       dockerfile: Dockerfile.nginx

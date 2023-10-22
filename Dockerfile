@@ -16,10 +16,10 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /var/www/html
 
 # Copy built assets from asset-builder
-COPY --from=asset-builder /app/public /var/www/html/public
+COPY . /var/www/html
 
 # Copy the rest of the application
 COPY . .
 
 # You can expose port 9000 for FPM if needed
-EXPOSE 5000
+EXPOSE 9000
