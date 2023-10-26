@@ -1,3 +1,19 @@
+<?php
+
+  $controller = new UserController();
+
+  $request = [
+    "fname"=> "",
+    "lname"=> "",
+    "email"=> "",
+    "password"=> "",
+    "confirm_password"=> "",
+  ];
+
+  $controller->createUser($request);
+
+?>
+
 <form action="#" method="post">
  </div>
 
