@@ -1,6 +1,5 @@
 <?php
 
-include_once '../app/views/database/connection.php';
 include_once './header.php';
 
 function showError404() {

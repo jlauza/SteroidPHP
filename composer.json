@@ -1,0 +1,6 @@
+{
+    "require": {
+        "illuminate/database": "^10.29",
+        "ircmaxell/password-compat": "^1.0"
+    }
+}
