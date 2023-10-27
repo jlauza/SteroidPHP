@@ -1,5 +1,5 @@
 <?php
-  // require '../../controller/UserController.php';
+  // require '../../../app/controller/UserController.php';
   // require_once(dirname(__FILE__) ."../../controller/UserController.php");
 
   $controller = new UserController();
@@ -13,9 +13,10 @@
   ];
 
   $controller->createUser($request);
-
+  
 ?>
 
+<?php echo $error; ?>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
  </div>
 
