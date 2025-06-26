@@ -1,25 +1,26 @@
 <?php
-// require_once __DIR__ . '/../../app/controller/UserController.php';
+require_once __DIR__ . '../../controller/UserController.php';
 
-// $controller = new UserController();
-// $error = '';
+$controller = new UserController();
+$error = '';
 
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $request = [
-//         "fname" => $_POST['fname'],
-//         "lname" => $_POST['lname'],
-//         "email" => $_POST['email'],
-//         "password" => $_POST['password'],
-//         "confirm_password" => $_POST['confirm_password'],
-//     ];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $request = [
+        "fname" => $_POST['fname'],
+        "lname" => $_POST['lname'],
+        "email" => $_POST['email'],
+        "password" => $_POST['password'],
+        "confirm_password" => $_POST['confirm_password'],
+    ];
 
-//     $error = $controller->createUser($request);
-// }
-  
-// ?>
-
-<?php echo $error; 
+    $error = $controller->createUser($request);
+}
 ?>
+
+<?php if ($error): ?>
+    <div class="error"><?php echo $error; ?></div>
+<?php endif; ?>
+
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
  </div>
 
