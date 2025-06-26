@@ -38,3 +38,9 @@ Then
 `bash
 kill 12345
 `
+
+# Or
+
+`bash
+composer stop
+`
