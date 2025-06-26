@@ -24,7 +24,8 @@ composer install
 composer start
 `
 
-#Kill Zombie Server
+# Kill Zombie Server
+
 This PHP server won't die easy. So I have to document it. Below is the process how to kill the server after development
 
 `bash
