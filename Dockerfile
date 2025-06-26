@@ -21,5 +21,5 @@ COPY . /var/www/html
 # Copy the rest of the application
 COPY . .
 
-# You can expose port 9000 for FPM if needed
-EXPOSE 9000
+# You can expose port 8081 for FPM if needed
+EXPOSE 8081
