@@ -1,6 +1,6 @@
 <?php
-  // require '../../../app/controller/UserController.php';
-  // require_once(dirname(__FILE__) ."../../controller/UserController.php");
+  require '../../../app/controller/UserController.php';
+  require_once(dirname(__FILE__) ."../../controller/UserController.php");
 
   $controller = new UserController();
 
