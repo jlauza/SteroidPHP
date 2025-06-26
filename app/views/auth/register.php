@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '../../controller/UserController.php';
+require_once __DIR__ . '/../../controller/UserController.php';
+require_once __DIR__ . '/../models/users/UserModel.php';
 
 $controller = new UserController();
 $error = '';
