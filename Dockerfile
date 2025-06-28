@@ -23,3 +23,7 @@ COPY . .
 
 # You can expose port 8081 for FPM if needed
 EXPOSE 8081
+
+# Start the Application
+CMD ["composer", "start"]
+

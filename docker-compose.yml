@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  php-app:
+  app:
     image: app
-    container_name: phpplayground-app
+    container_name: steroidPHP-app
     build: .
     restart: always
     ports:
@@ -15,29 +15,18 @@ services:
 
   mysql:
     image: mysql
-    container_name: phpplayground-mysql
+    container_name: steroidPHP-mysql
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: phpmyadmin
+      MYSQL_DATABASE: steroidphp
       MYSQL_PASSWORD:
     ports:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
-  phpmyadmin:
-    image: phpmyadmin
-    container_name: phpplayground-phpmyadmin
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3307
-    ports:
-      - "8082:80"
-    depends_on:
-      - mysql
-
   nginx:
-    container_name: phpplayground-nginx
+    container_name: steroidPHP-nginx
     build:
       context: .
       dockerfile: Dockerfile.nginx

@@ -1,6 +1,6 @@
-# PHP Playground
+# Steroid PHP ()
 
-For PHP practice.
+A custom PHP MVC architecture resolving the issue of default PHP synchronous to asynchronous.
 
 # Get Started
 
