@@ -7,7 +7,7 @@ services:
     build: .
     restart: always
     ports:
-      - "8081:80"
+      - "8080:8080"
     volumes:
       - .:/var/www/html
     depends_on:
@@ -25,17 +25,11 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-  nginx:
-    container_name: steroidPHP-nginx
-    build:
-      context: .
-      dockerfile: Dockerfile.nginx
-    volumes:
-      - .:/var/www/html
-    ports:
-      - "8080:80"
-    depends_on:
-      - php-app
+  healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8080"]
+    interval: 10s
+    timeout: 5s
+    retries: 3
 
 volumes:
   mysql_data:

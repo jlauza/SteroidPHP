@@ -1,5 +1,5 @@
 # Use the official PHP image
-FROM php:8.1-fpm
+FROM php:8.1-cli
 
 # Install system dependencies, PHP extensions, and Composer.
 RUN apt-get update && apt-get install -y \
@@ -17,12 +17,6 @@ WORKDIR /var/www/html
 
 # Copy built assets from asset-builder
 COPY . /var/www/html
-
-# Copy the rest of the application
-COPY . .
-
-# You can expose port 8081 for FPM if needed
-EXPOSE 8081
 
 # Start the Application
 CMD ["composer", "start"]
