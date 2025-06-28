@@ -1,4 +1,4 @@
-# Steroid PHP ()
+# Steroid PHP (PHP in Steroids)
 
 A custom PHP MVC architecture resolving the issue of default PHP synchronous to asynchronous.
 
