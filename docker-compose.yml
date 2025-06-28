@@ -25,11 +25,12 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-  healthcheck:
-    test: ["CMD", "curl", "-f", "http://localhost:8080"]
-    interval: 10s
-    timeout: 5s
-    retries: 3
+  # Prep for the future
+  # healthcheck:
+  #   test: ["CMD", "curl", "-f", "http://localhost:8080"]
+  #   interval: 10s
+  #   timeout: 5s
+  #   retries: 3
 
 volumes:
   mysql_data:
