@@ -5,43 +5,51 @@ A custom PHP MVC architecture resolving the issue of default PHP synchronous to 
 # Get Started
 
 - Start/Run Docker
-  `bash
+
+```bash
 dockerd or sudo dockerd
-`
+```
 
 - Build containers
-  `bash
+
+```bash
 sudo docker compose up -d
-`
+```
 
 - Install dependencies in the root
-  `bash
+
+```bash
 composer install
-`
+```
 
 - Run the app
-  `bash
+
+```bash
 composer start
-`
+```
 
 # Kill Zombie Server
 
 This PHP server won't die easy. So I have to document it. Below is the process how to kill the server after development
 
-`bash
+```bash
 lsof -i :8000
-`
+```
+
 Result
-`bash
+
+```bash
 php    12345 yourusername   3u  IPv4 0x... TCP *:8000 (LISTEN)
-`
+```
+
 Then
-`bash
+
+```bash
 kill 12345
-`
+```
 
 # Or
 
-`bash
+```bash
 composer stop
-`
+```
