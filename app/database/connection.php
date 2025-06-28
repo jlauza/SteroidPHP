@@ -11,8 +11,6 @@ $capsule->bootEloquent();
 try {
 
     $capsule->addConnection( $config )->getPdo();
-    echo "Database connection established successfully!";
 
 } catch (\Exception $e) {
-    echo "Database connection failed: " . $e->getMessage();
 }
