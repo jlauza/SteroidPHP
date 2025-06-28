@@ -6,10 +6,7 @@ services:
     container_name: steroidPHP-app
     build:
       context: .
-      args:
-        ENABLE_PGSQL: "false"
-        ENABLE_MYSQL: "true"
-        ENABLE_SQLITE: "false"
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "8080:8080"
@@ -29,13 +26,7 @@ services:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-
-  # Prep for the future
-  # healthcheck:
-  #   test: ["CMD", "curl", "-f", "http://localhost:8080"]
-  #   interval: 10s
-  #   timeout: 5s
-  #   retries: 3
+    restart: always
 
 volumes:
   mysql_data:
