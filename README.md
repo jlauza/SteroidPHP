@@ -1,7 +1,7 @@
 # Steroid PHP (PHP in Steroids)
 
 <p align="center">
-  <img src="https://www.php.net/images/logos/php-logo.svg" width="480" alt="PHP Logo">
+  <img src="https://www.php.net/images/logos/new-php-logo.svg" width="380" alt="PHP Logo">
 </p>
 
 A custom PHP MVC architecture resolving the issue of default PHP synchronous to asynchronous.
@@ -9,7 +9,7 @@ A custom PHP MVC architecture resolving the issue of default PHP synchronous to 
 ## MVC Architecture
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg" width="480" alt="PHP Logo">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg" width="380" alt="PHP Logo">
 </p>
 _Steroid PHP follows the Model-View-Controller (MVC) pattern where:_
 
