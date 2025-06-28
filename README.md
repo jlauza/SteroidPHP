@@ -1,6 +1,16 @@
+![PHP MVC Architecture](https://raw.githubusercontent.com/php/php-src/master/docs/images/php-mvc-flow.png)
+
 # Steroid PHP (PHP in Steroids)
 
 A custom PHP MVC architecture resolving the issue of default PHP synchronous to asynchronous.
+
+## MVC Architecture
+
+_Steroid PHP follows the Model-View-Controller (MVC) pattern where:_
+
+- **Model** (`app/models/`): Handles data logic and database interactions
+- **View** (`app/views/`): Manages the presentation layer and user interface
+- **Controller** (`app/controller/`): Controls the flow between Model and View
 
 # Get Started
 
