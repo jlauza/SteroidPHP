@@ -1,23 +1,33 @@
 <?php
-$host = getenv('DB_HOST'); // e.g., 'localhost' or '127.0.0.1'
-$dbname = getenv('DB_DATABASE'); // your database name
-$username = getenv('DB_USERNAME'); // your database username
-$password = getenv('DB_PASSWORD'); // your database password
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // echo 'Connected to the database successfully using PDO!';
-} catch (PDOException $e) {
-    die('Connection failed: ' . $e->getMessage());
+$driver = getenv('DB_CONNECTION') ?? 'mysql';
+
+// Check driver
+switch ($driver) {
+    case 'pgsql':
+        if (!extension_loaded('pdo_pgsql')) {
+            error_log("PostgreSQL driver not loaded.");
+        }
+        break;
+    case 'mysql':
+        if (!extension_loaded('pdo_mysql')) {
+            error_log("MySQL driver not loaded.");
+        }
+        break;
+    case 'sqlite':
+        if (!extension_loaded('pdo_sqlite')) {
+            error_log("SQLite driver not loaded.");
+        }
+        break;
 }
 
-// return [
-//     'driver' => 'pdo_mysql',
-//     'host' => getenv('DB_HOST'),
-//     'database' => getenv('DB_DATABASE'),
-//     'username' => getenv('DB_USERNAME'),
-//     'password' => getenv('DB_PASSWORD'),
-//     'charset' => 'utf8',
-//     'collation' => 'utf8_unicode_ci',
-// ];
+return [
+    'driver'    => $driver,
+    'host'      => getenv('DB_HOST'),
+    'database'  => getenv('DB_DATABASE'),
+    'username'  => getenv('DB_USERNAME'),
+    'password'  => getenv('DB_PASSWORD'),
+    'charset'   => 'utf8mb4',
+    'collation' => 'utf8mb4_unicode_ci',
+    'prefix'    => '',
+];

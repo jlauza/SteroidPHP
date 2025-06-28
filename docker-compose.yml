@@ -4,7 +4,12 @@ services:
   app:
     image: app
     container_name: steroidPHP-app
-    build: .
+    build:
+      context: .
+      args:
+        ENABLE_PGSQL: "false"
+        ENABLE_MYSQL: "true"
+        ENABLE_SQLITE: "false"
     restart: always
     ports:
       - "8080:8080"
