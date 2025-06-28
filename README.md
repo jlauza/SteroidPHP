@@ -37,18 +37,18 @@ sudo docker compose up -d
 composer install
 ```
 
-- Run the app
+- Run the app (Optional)
 
 ```bash
 composer start
 ```
 
-# Kill Zombie Server
+# Kill Zombie Server (If necesarry)
 
-This PHP server won't die easy. So I have to document it. Below is the process how to kill the server after development
+If the PHP server won't die easy. Below is the process how to kill the server after development
 
 ```bash
-lsof -i :8000
+lsof -i :8080
 ```
 
 Result
