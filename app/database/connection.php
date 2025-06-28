@@ -1,9 +1,9 @@
 <?php
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-require_once '../../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
-$config = require './configurations.php';
+$config = require __DIR__ . '/configurations.php';
 
 $capsule = new Capsule;
 $capsule->addConnection($config);
