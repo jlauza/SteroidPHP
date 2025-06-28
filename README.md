@@ -25,6 +25,16 @@ _Steroid PHP follows the Model-View-Controller (MVC) pattern where:_
 dockerd or sudo dockerd
 ```
 
+- If newly cloned
+
+```bash
+sudo docker compose build
+
+or
+# useful when rebuilding with no cache flag
+sudo docker compose build --no-cache
+```
+
 - Build containers
 
 ```bash
