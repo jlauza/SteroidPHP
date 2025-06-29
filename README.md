@@ -1,7 +1,7 @@
 # Steroid PHP (PHP in Steroids)
 
 <p align="center">
-  <img src="https://www.php.net/images/logos/new-php-logo.svg" width="380" alt="PHP Logo">
+  <img src="https://github.com/jlauza/SteroidPHP/blob/main/public/image/logo.png?raw=true" width="380" alt="PHP Logo">
 </p>
 
 A custom PHP MVC architecture resolving the issue of default PHP synchronous to asynchronous.
