@@ -17,4 +17,4 @@ WORKDIR /var/www/html
 # Copy built assets from asset-builder
 COPY . /var/www/html
 
-CMD ["php", "-S", "0.0.0.0:8080", "-t", "public"]
+CMD ["php", "-S", "0.0.0.0:8080", "-t", "app/public"]

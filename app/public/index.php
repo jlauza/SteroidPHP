@@ -10,24 +10,26 @@ function showError404() {
 $request = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
 $request = trim($request,"/");
+
 // $request = str_replace("","/", $request);
+
 
 switch ($request) {
     case "":
-        case"home":
+        case "home":
         require_once "./home.php";
         break;
 
         case "login":
-            require_once "../app/views/auth/login.php";
+            require_once "../views/auth/login/page.php";
             break;
 
         case "register":
-            require_once "../app/views/auth/register.php";
+            require_once "../views/auth/register/page.php";
             break;            
 
         case "dashboard":
-        require_once "../app/views/dashboard.php";
+        require_once "../views/dashboard/page.php";
         break;
     
     default:
