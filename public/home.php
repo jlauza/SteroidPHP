@@ -6,9 +6,9 @@
         <a href="#" class="inline-block bg-green-800 text-white px-6 py-2 rounded hover:bg-green-700 transition">Get Started <i class="fa-solid fa-arrow-right-long"></i></a>
 
         <div class="mt-8 flex justify-center space-x-4">
-            <a href="#" class="">
-                <i class="fab fa-github fa-2x"></i>
-                <p class="">Follow us on GitHub</p>
+            <a href="https://github.com/jlauza/SteroidPHP" target="_blank" class="">
+                <i class="fab fa-github fa-2x"></i><br/>
+                <small class="">Follow us</small>
             </a>
         </div>
     </div>
