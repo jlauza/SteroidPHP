@@ -1,3 +1,3 @@
 <?php
 
-echo "Dashboard";
+echo "Welcome to Dashboard.";
