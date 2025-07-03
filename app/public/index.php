@@ -21,3 +21,5 @@ if (array_key_exists($request, $routes)) {
 }
 
 include_once './footer.php';
+
+// DO NOT TOUCH THIS FILE
