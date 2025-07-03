@@ -1,14 +1,14 @@
 <div class="min-h-screen flex items-center justify-center">
     <div class="text-center">
         <img src="image/logo.png" alt="SteroidPHP Logo" class="mx-auto mb-4 w-30" />
-        <h1 class="text-4xl font-bold mb-4">Welcome to SteroidPHP</h1>
+        <h1 class="text-4xl font-bold mb-4 text-gray-200">Welcome to SteroidPHP</h1>
             <div class="mb-6">
-                <p class="text-lg">This turtle is on roids. PHP never looked this fast.</p>
+                <p class="text-lg text-gray-200">This turtle is on roids. PHP never looked this fast.</p>
                 <span class="text-gray-600">Have you heard about PHP but async/await?</span>
             </div>
         <!-- Documentation Section -->
         <div class="mt-8 max-w-2xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Explore SteroidPHP</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-400">Explore SteroidPHP</h2>
             <div class="grid grid-cols-2 gap-4">
                 <!-- Documentation -->
                 <div class="border border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
@@ -70,5 +70,5 @@
 </div>
 <div class="text-center text-gray-500">
 <small>&copy; <?php echo date("Y"); ?> SteroidPHP. All rights reserved.</small>
-<small>Created by Jayson Lauza (InitiaDev)</small>    
+<small>Powered by Initiadev</small>    
 </div>
