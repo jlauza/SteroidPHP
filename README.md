@@ -47,7 +47,7 @@ sudo docker compose up -d
 composer install
 ```
 
-- Run the app (Optional)
+- Run the app locally or outside docker (Optional)
 
 ```bash
 composer start
