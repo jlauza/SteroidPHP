@@ -13,6 +13,9 @@ class ComposerStaticInit4b3f46cc5aaf35ab7ec7e7f8a4a9721e
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '88254829cb0eed057c30eaabb6d8edc4' => __DIR__ . '/..' . '/amphp/amp/src/functions.php',
+        '429ae5f14a13a9076791c19422e10996' => __DIR__ . '/..' . '/amphp/amp/src/Future/functions.php',
+        'c8601a4144b50a7b548da082c89c4dc1' => __DIR__ . '/..' . '/amphp/amp/src/Internal/functions.php',
         'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
     );
 
@@ -27,6 +30,10 @@ class ComposerStaticInit4b3f46cc5aaf35ab7ec7e7f8a4a9721e
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
+        ),
+        'R' => 
+        array (
+            'Revolt\\' => 7,
         ),
         'P' => 
         array (
@@ -53,6 +60,10 @@ class ComposerStaticInit4b3f46cc5aaf35ab7ec7e7f8a4a9721e
         array (
             'Brick\\Math\\' => 11,
         ),
+        'A' => 
+        array (
+            'Amp\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -75,6 +86,10 @@ class ComposerStaticInit4b3f46cc5aaf35ab7ec7e7f8a4a9721e
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Revolt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/revolt/event-loop/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -118,6 +133,10 @@ class ComposerStaticInit4b3f46cc5aaf35ab7ec7e7f8a4a9721e
         'Brick\\Math\\' => 
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
+        'Amp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/amphp/amp/src',
         ),
     );
 

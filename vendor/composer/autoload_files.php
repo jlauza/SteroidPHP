@@ -12,5 +12,8 @@ return array(
     'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     'a1105708a18b76903365ca1c4aa61b02' => $vendorDir . '/symfony/translation/Resources/functions.php',
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
+    '88254829cb0eed057c30eaabb6d8edc4' => $vendorDir . '/amphp/amp/src/functions.php',
+    '429ae5f14a13a9076791c19422e10996' => $vendorDir . '/amphp/amp/src/Future/functions.php',
+    'c8601a4144b50a7b548da082c89c4dc1' => $vendorDir . '/amphp/amp/src/Internal/functions.php',
     'e40631d46120a9c38ea139981f8dab26' => $vendorDir . '/ircmaxell/password-compat/lib/password.php',
 );
