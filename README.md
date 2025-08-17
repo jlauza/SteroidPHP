@@ -81,7 +81,7 @@ composer stop
 
 # Kill Docker Engine (Rare)
 
-If you ran dockerd and accidentally closed the terminla. Likely, the docker engine is still running in the backround.
+If you ran dockerd and accidentally closed the terminal. Likely, the docker engine is still running in the backround.
 To kill this, follow this process:
 
 1. Find the pid
