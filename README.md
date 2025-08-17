@@ -78,3 +78,20 @@ kill 12345
 ```bash
 composer stop
 ```
+
+# Kill Docker Engine (Rare)
+
+If you ran dockerd and accidentally closed the terminla. Likely, the docker engine is still running in the backround.
+To kill this, follow this process:
+
+1. Find the pid
+
+```bash
+ps aux | grep dockerd
+```
+
+2. It may come with more than 1 results with "sudo dockerd", "grep \*\*\*". Select the one with "dockerd" written on it without sudo. Those are wrappers.
+
+```bash
+sudo kill -9 <pid>
+```
