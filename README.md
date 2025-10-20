@@ -95,3 +95,17 @@ ps aux | grep dockerd
 ```bash
 sudo kill -9 <pid>
 ```
+
+# Containers already built
+
+```bash
+sudo dockerd
+```
+
+```bash
+sudo docker compose up -d
+```
+
+```bash
+Access to browser http://localhost:8080
+```
